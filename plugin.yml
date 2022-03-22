@@ -1,0 +1,6 @@
+name: Bossbars
+version: 1.0.0
+antigen: xenialdan\apibossbar
+api: [4.0.0]
+php: [7.4, 8.0]
+authors: [XenialDan, DanteDev]
