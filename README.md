@@ -1,17 +1,47 @@
 # Bossbars
 A Bossbar Plugin used By DctxGamesMC
 NOTE: CREDITS TO THE ORIGNAL OWNER OF THIS PLUGIN @thebigsmileXD / @XenialDan
+
+Any issues with this pop me and issue at the issue tab:D
 # Features:
 - creating a bossbar
 - Virion Support
 # How to create a bossbar?
-Virion Support:
-Soon
-Usage: 
-Soon
+Usage:
+```php
+<?php
+
+use xenialdan\apibossbar\DiverseBossBar;
+use xenialdan\apibossbar\BossBar;
+```
+Usage 2:
+```php
+<?php
+
+$api = new BossBar();
+
+```
 Creating The Bossbar:
-Soon
+```php
+    public function bossbarText($player) {
+        $name = "§l§eYour §cMinigame";
+        $api->setTitle($name);
+        $api->setPercentage(100);
+        $api->addPlayer($player);
+    }
+```
+
 Removing The Bossbar:
+```php
+    public function removeBossBar($player) {
+        $api->removePlayer($player);
+    }
+```
+
+Removing bossbar when leaving minigame:
+```php
+$this->removeBossbar($player);
+```
 -------------------------------
 By XenialDan
 
