@@ -24,6 +24,7 @@ $api = new BossBar();
 Creating The Bossbar:
 ```php
     public function bossbarText($player) {
+        $api = new BossBar();
         $name = "§l§eYour §cMinigame";
         $api->setTitle($name);
         $api->setPercentage(100);
@@ -34,13 +35,9 @@ Creating The Bossbar:
 Removing The Bossbar:
 ```php
     public function removeBossBar($player) {
+        $api = new BossBar();
         $api->removePlayer($player);
     }
-```
-
-Removing bossbar when leaving minigame:
-```php
-$this->removeBossbar($player);
 ```
 -------------------------------
 By XenialDan
